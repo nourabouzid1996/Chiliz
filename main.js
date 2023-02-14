@@ -44,8 +44,8 @@ function outputDate(dates) {
     const years = Math.floor(diffDays / 365);
     const months = Math.floor((diffDays % 365) / 30);
 
-    const result = `${years ? `${years} year${years > 1 ? 's' : ''},` : ''}${(months > 0 && diffDays >= 31 ) ? `${years ? ` ` : ``}${months} month${months > 1 ? 's' : ''},` : ''}${(years !== 0 || (months > 0 && diffDays >= 31)) ? ` ` : ``}total ${diffDays} days`;
+    const result = `${years ? `${years} year${years > 1 ? 's' : ''},` : ''}${(months > 0 && diffDays >= 31) ? `${years ? ` ` : ``}${months} month${months > 1 ? 's' : ''},` : ''}${(years !== 0 || (months > 0 && diffDays >= 31)) ? ` ` : ``}total ${diffDays} days`;
     //console.log(result)
 
-    return  result;
+    return result;
 }
